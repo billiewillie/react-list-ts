@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useState, ReactNode } from "react";
 
 export enum CardVariant {
 	outlined = "outlined",
@@ -8,7 +8,7 @@ export enum CardVariant {
 interface CardProps {
 	width?: string;
 	height?: string;
-	children?: React.ReactNode;
+	children?: ReactNode;
 	variant: CardVariant;
 	onClick: (n: number) => void;
 }
